@@ -1,4 +1,10 @@
 type User {
   id: ID! @unique
   name: String!
+  email: String!
+}
+
+type Dog {
+  id: ID! @unique
+  name: String!
 }

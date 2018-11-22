@@ -1,9 +1,8 @@
-require('dotenv').config();
-const createServer = require('./createServer');
-// const db = require('./db');
+import './config';
+import { createServer } from './createServer';
 
+console.log('sup');
 const server = createServer();
-
 server.start(
   {
     port: process.env.PORT,
