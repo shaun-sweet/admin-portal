@@ -5,10 +5,10 @@ console.log('sup');
 const server = createServer();
 server.start(
   {
-    port: process.env.PORT,
+    port: process.env.PORT || 4444,
     cors: {
       credentials: true,
-      origin: process.env.UI_URL,
+      origin: process.env.UI_URL || "http://localhost:3000",
     },
   },
   (deets) => {
